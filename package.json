@@ -1,0 +1,35 @@
+{
+  "name": "Tzach",
+  "version": "1.0.1",
+  "description": "a mini-site that was made to show capabilities.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha .\\test\\test.js"
+  },
+  "author": "Tzach Bein",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "angular-ui-router": "^0.4.2",
+    "bloodhound-js": "^1.2.1",
+    "body-parser": "^1.17.2",
+    "bootstrap": "^3.3.7",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.4",
+    "express-method-override": "0.0.3",
+    "express-sanitizer": "^1.0.2",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.1",
+    "mongoose": "^4.11.9",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "typeahead.js": "^0.11.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "gulp": "^3.9.1",
+    "mocha": "^3.5.0",
+    "supertest": "^3.0.0"
+  }
+}

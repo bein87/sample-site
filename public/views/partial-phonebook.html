@@ -1,0 +1,86 @@
+<div class="alert alert-info alert-title">
+    <h2 class="myHeader">Phonebook</h2>
+    <h4> Implementing RESTful API - view, edit, remove or add new entity to database (nosql - mongoDB).</h4>
+</div>
+<div id="result"></div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-default" data-toggle="modal" data-target="#newClientModal">New Client</button>
+<!-- Modal -->
+<div class="modal fade" id="newClientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Add New Client</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="newClientID">ID:</label>
+                    <input id="newClientID" class="form-control" required="required" name="newClientID"
+                           ng-model="newClient.id" value={{newClient.id}}>
+                </div>
+                <div class="form-group">
+                    <label for="newClientName">Name:</label>
+                    <input class="form-control" id="newClientName" required="required" name="clientName"
+                           ng-model="newClient.name" value={{newClient.name}}>
+                </div>
+                <div class="form-group">
+                    <label for="newClientAddress">Address:</label>
+                    <input class="form-control" id="newClientAddress" required="required" name="clientAddress"
+                           ng-model="newClient.address" value={{newClient.address}}>
+                </div>
+                <div class="form-group">
+                    <label for="newClientPhone">Phone:</label>
+                    <input class="form-control" id="newClientPhone" required="required" name="clientPhone"
+                           ng-model="newClient.phone" value={{newClient.phone}}>
+                </div>
+                <div class="mediumHeight">
+                    <button class="styledButton" ng-click="addClient(newClient,$scope)">Add</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--table-->
+<div class="table-responsive">
+    <table st-table="rowCollection" class="table table-striped">
+        <thead>
+        <tr>
+            <th st-sort="id">ID</th>
+            <th st-sort="name">NAME</th>
+            <th st-sort="phone">PHONE</th>
+            <th st-sort="address">ADDRESS</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="animate-repeat" ng-repeat="client in clients track by $index" ng-mouseover="hoverIn()"
+            ng-mouseleave="hoverOut()">
+            <td class="col-md-1 rowHoverDeleteButton">
+                <input class="editableInput editable-input-xs" required="required" disabled="disabled" name="clientID" ng-model="client.id" value="{{client.id}}"/>
+            </td>
+            <td class="col-md-2">
+                <input class="editableInput editable-input-s" required="required" name="clientName" ng-model="client.name" value="{{client.name}}"/>
+            </td>
+            <td class="col-md-2">
+                <input class="editableInput editable-input-m" required="required" name="clientPhone" ng-model="client.phone" value="{{client.phone}}"/>
+            </td>
+            <td class="col-md-2">
+                <input class="editableInput editable-input-l" required="required" name="clientAddress" ng-model="client.address" value="{{client.address}}"/>
+            </td>
+            <td class="col-md-3">
+                <button class="styledButton floatingLeft" ng-click="editClient(client) ">Save</button>
+            </td>
+            <td class="col-md-1">
+                <span ng-show="hoverEdit">
+                        <img class="deleteButton" src="./images/delete.png" ng-click="removeClient(client, clients, $index) "/>
+                </span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- preloader -->
+<img src="./images/preloader2.gif" class="loaderImg" ng-hide="isPageReady"/>

@@ -35,13 +35,3 @@ gulp.task('nodemon', function (cb) {
         }
     })
 })
-
-//to be implemented - gulp running mongod
-// var run = require('gulp-run');
-// gulp.task('a', function() {
-//     return gulp
-//     .src('C:\\Program Files\\MongoDB\\bin\\')             // get input files.
-//         .pipe(run('mongod --dbpath "C:\\users\\tzach bein\\desktop\\tzach\\db'))     // use awk to extract the even lines.
-//         .pipe(gulp.dest('path/to/output'))  // profit.
-//
-// })

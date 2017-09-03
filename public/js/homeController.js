@@ -1,5 +1,7 @@
 app.controller('homeController', function($scope){
 
+    $scope.callForActionTabs = false
+
     ga('send', {
         hitType: 'pageview',
         page: 'home'
@@ -30,11 +32,12 @@ app.controller('homeController', function($scope){
             "framework" : "express",
             "javascript" : "jQuery",
             "style" : "bootstrap",
-            "database" : "mongodb",
+            "developing tools" : "gulp with browser-sync and nodemon",
+            "testing" : "chai with mocha",
             "api's" : {
-                "location" : "google maps + freegeoip",
+                "location" : "google maps and freegeoip",
                 "analyze" : "google analytics",
-                "weather" : "self-made webCrawler + apixu",
+                "weather" : "self-made webCrawler and apixu",
                 "typeahead" : "twitter"
             }
         },
@@ -110,4 +113,5 @@ app.controller('homeController', function($scope){
 
     //add "json" string to homepage DOM
     $('#json').html((regeStr))
+    $scope.callForActionTabs = true;
 })

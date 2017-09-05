@@ -1,10 +1,11 @@
 app.controller('navigatorController', function ($scope, $http) {
 
-    //close nav menu after clicking on a tab
+   //close nav menu after clicking on a tab
     $('.nav a').on('click', function(){
+        if ($(window).width()<768)
         $('.navbar-toggle').click()
     })
-
+    
     $http.get(`/IPStatistics`).then(
         (response) => {
             $scope.message = response.data.message

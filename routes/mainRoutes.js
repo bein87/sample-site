@@ -2,6 +2,11 @@ let express = require('express'),
     request = require('request-promise'),
     router = express.Router()
 
+router.get('/downloadCV', function(req, res){
+    res.download('../tzach/public/files/TzachBeinCV.docx');
+})
+
+
 //info shown in navigator, according to user's ip
 router.get('/IPStatistics', (req, res) => {
 

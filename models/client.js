@@ -1,10 +1,10 @@
 var mongoose = require("mongoose");
 
 var clientSchema = new mongoose.Schema({
-    id: Number,
+    id: String,
     name: String,
     address: String,
-    phone: Number
+    phone: String
 })
 
 module.exports = mongoose.model("Client", clientSchema)

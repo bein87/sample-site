@@ -4,7 +4,7 @@
 </div>
 <div id="result"></div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-default" data-toggle="modal" data-target="#newClientModal">New Client</button>
+<button type="button" class="btn btn-default new-client-btn ng-scope" data-toggle="modal" data-target="#newClientModal">New Client</button>
 <!-- Modal -->
 <div class="modal fade" id="newClientModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-sm" role="document">
@@ -36,7 +36,7 @@
                            ng-model="newClient.phone" value={{newClient.phone}}>
                 </div>
                 <div class="mediumHeight">
-                    <button class="styledButton" ng-click="addClient(newClient,$scope)">Add</button>
+                    <button class="styledButton modalButton" ng-click="addClient(newClient,$scope)">Add</button>
                 </div>
                 </form>
             </div>

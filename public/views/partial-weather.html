@@ -6,7 +6,7 @@
 <!--countries list, with autocomplete search-->
 <div class="col-sm-3 col-xs-4">
     <div id="bloodhound" class="smallBottomMargin">
-        <input class="typeahead" type="text" ng-model="search" placeholder="Search country... ">
+        <input class="typeahead" type="text" ng-model="search" placeholder="Search... ">
     </div>
     <div class="typeahead-countries">
         <div class="table-responsive searchBar">
@@ -32,7 +32,7 @@
         <div ng-show="country" class="minusSmallTopMargin">
             <div class="page-header" >
                 <h2>{{country}}
-                    <small ng-show="capital"> - capital city: {{capital}}
+                    <small ng-show="capital"> - capital city: {{capital}}</small>
                 </h2>
             </div>
             <h4 class="alert alert-success" ng-show="status">Showing statistics for: {{city}}</h4>

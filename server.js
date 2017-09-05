@@ -15,15 +15,13 @@ app.use(express.static('node_modules'))
 app.use(bodyParser.json())
 app.use(expressSenitizer())
 
-//TODO: add css to mobile view
-
 //TODO: Add more (and more detailed) unit tests scenarios
 
 //TODO: Mongodb and mongoose - add fields validation (+check about Redis)
 
 //TODO: Implement users login and authentication + Facebook session
 
-//TODO: [Babel, Gulp, Bluebird]
+//TODO: [Babel, Bluebird]
 
 //routes
 app.use(mainRoutes)
@@ -36,6 +34,6 @@ app.listen(8000, () => {
 
 app.all('*', (req, res) => {
   res.sendFile(__dirname + "/public/index.html")
-  let user_ip = req.headers['x-forwarded-for']
+  let user_ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress
   console.log(`${(new Date).toLocaleTimeString()} : New access from IP: ${user_ip}`)
 })

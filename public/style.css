@@ -2,6 +2,812 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width: 481px)  {
+
+    .callForActionTabs{
+        float:right;
+        width:80px;
+        margin-right:-10px;
+        margin-top:-210px;
+    }
+
+    .callForActionImg{
+        width: 60%;
+        margin-left: 1%;
+        margin-top: 10%;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        margin-left: 30%;
+    }
+
+    .myImg{
+        border-radius: 13px;
+        margin-left: 8%;
+        width: 84%;
+        margin-top: 3px;
+
+    }
+
+
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 10px;
+    }
+
+    .typeahead-results h2,.typeahead-results h3,.typeahead-results h4, .typeahead-results h6{
+        font-size:10px!important;
+    }
+    .citiesList{
+        margin: 5px!important;
+        padding: 2px!important;
+    }
+    .citiesList div{
+        font-size:10px!important;
+
+    }
+    #weatherIcon {
+        width:30%
+    }
+    #cvDownloadImg{
+        position: absolute;
+        margin-top: 160px;
+        margin-left:205px;
+        max-height:30px;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    #json {
+        font-size: 9px;
+    }
+
+    .deleteButton {
+        margin-left: -6px!important;
+        height: 23px!important;
+        margin-top:5px!important;
+    }
+
+    .editable-input-xs {
+        padding: 0 12px!important;
+        width: 33px;
+        font-size: 10px!important;
+    }
+    .editable-input-xs:focus {
+        width: 36px;
+    }
+    .editable-input-s {
+        padding: 0 12px!important;;
+        width: 41px;
+        font-size: 10px!important;;
+    }
+    .editable-input-s:focus {
+        width: 45px;
+    }
+    .editable-input-m {
+
+        padding: 0 12px!important;;
+        width: 48px;
+        font-size: 10px!important;;
+    }
+    .editable-input-m:focus {
+        width: 53px;
+    }
+    .editable-input-l {
+        padding: 0 12px!important;;
+        width: 55px;
+        font-size: 10px!important;;
+    }
+    .editable-input-l:focus {
+        width: 58px;
+    }
+    .styledButton{
+        font-size: 12px!important;
+        width: 30px!important;
+        margin-top: 6px!important;
+        padding: 0 2px;
+        margin-left: -15px;
+    }
+    .modalButton{
+        margin-left:1px!important;
+    }
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 350px;
+        margin-left:4%;
+        width: 92%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+    }
+}
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  and (max-width: 641px){
+
+    .callForActionImg{
+        width: 60%;
+        margin-left: 1%;
+        margin-top: 20%;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        margin-left: 30%;
+    }
+
+    .callForActionTabs{
+        float:right;
+        width:80px;
+        margin-right:-10px;
+        margin-top:-170px;
+    }
+
+    .myImg {
+        border-radius: 13px;
+        margin-left:6%;
+        width: 88%;
+        margin-bottom: -20px;
+        margin-top: 3px;
+    }
+
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 12px;
+    }
+    .typeahead-results h2,.typeahead-results h3,.typeahead-results h4, .typeahead-results h6{
+        font-size:16px!important;
+    }
+    .citiesList{
+        margin: 6px!important;
+        padding: 3px!important;
+    }
+    .citiesList div{
+        font-size:10px!important;
+
+    }
+    #cvDownloadImg{
+        position: absolute;
+        margin-top: 200px;
+        margin-left:250px;
+        max-height: 70px;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    #json {
+        font-size: 12px;
+    }
+
+    .deleteButton {
+        margin-left: -9px!important;
+        height: 23px!important;
+        margin-top:7px!important;
+    }
+
+    .editable-input-xs {
+        padding: 0 18px!important;;
+        width: 55px;
+        font-size: 10px!important;
+    }
+    .editable-input-xs:focus {
+        width: 60px;
+    }
+    .editable-input-s {
+        width: 70px;
+    }
+    .editable-input-s:focus {
+        width: 75px;
+    }
+    .editable-input-m {
+        width:75px;
+        font-size: 10px;
+    }
+    .editable-input-m:focus {
+        width: 80px;
+    }
+    .editable-input-l {
+        width: 90px;
+        font-size: 10px;
+    }
+    .editable-input-l:focus {
+        width: 95px;
+    }
+    .styledButton{
+        font-size: 14px!important;
+        width: 40px!important;
+        margin-top: 6px!important;
+        padding: 0 5px;
+        margin-left: -3px;
+
+    }
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 310px;
+        margin-left:4%;
+        width: 92%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width: 991px) {
+
+    .callForActionImg{
+        width: 50%;
+        margin-left: 1%;
+        margin-top: 15%;
+    }
+
+    .callForActionTabs{
+        float:right;
+        width:120px;
+        margin-right:-10px;
+        margin-top:-130px;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 30%;
+        margin-left: 30%;
+    }
+    .myImg {
+        border-radius: 13px;
+        margin-left:4%;
+        width: 92%;
+        margin-bottom: -20px;
+        margin-top: 3px;
+    }
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 16px;
+    }
+
+    #cvDownloadImg{
+        position: absolute;
+        margin-top: 280px;
+        margin-left:320px;
+        max-height: 100px;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    #json {
+        font-size: 18px;
+    }
+    .deleteButton {
+        margin-left: -9px!important;
+        height: 23px!important;
+        margin-top:7px!important;
+    }
+
+    .editable-input-xs {
+        width: 50px;
+        font-size: 10px;
+    }
+    .editable-input-xs:focus {
+        width: 75px;
+    }
+    .editable-input-s {
+        width: 120px;
+    }
+    .editable-input-s:focus {
+        width: 150px;
+    }
+    .editable-input-m {
+        width:135px;
+        font-size: 10px;
+    }
+    .editable-input-m:focus {
+        width: 160px;
+    }
+    .editable-input-l {
+        width: 160px;
+        font-size: 10px;
+    }
+    .editable-input-l:focus {
+        width: 185px;
+    }
+
+    .styledButton{
+        font-size: 14px!important;
+        width: 40px!important;
+        margin-top: 6px!important;
+        padding: 0 5px;
+        margin-left: -7px;
+
+    }
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 280px;
+        margin-left:10%;
+        width: 80%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:991px) and (max-width: 1025px) {
+
+    .callForActionImg{
+        width: 40%;
+        margin-left: 1%;
+        margin-top: 17%;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 11%;
+        margin-left: 30%;
+    }
+    .callForActionTabs{
+        float:right;
+        width:130px;
+        margin-right:-10px;
+        margin-top:-130px;
+    }
+    .myImg {
+        border-radius: 13px;
+        margin-left:6%;
+        width: 88%;
+        margin-bottom: -20px;
+        margin-top: 3px;
+    }
+
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 20px;
+    }
+
+    #cvDownloadImg{
+        position: absolute;
+        margin-top:300px;
+        margin-left:370px;
+        max-height:200px;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    #json {
+        font-size: 20px;
+    }
+
+    .editable-input-xs {
+        width: 90px;
+    }
+    .editable-input-xs:focus {
+        width: 120px;
+    }
+    .editable-input-s {
+        width: 170px;
+    }
+    .editable-input-s:focus {
+        width: 190px;
+    }
+    .editable-input-m {
+        width: 200px;
+    }
+    .editable-input-m:focus {
+        width: 220px;
+    }
+    .editable-input-l {
+        width: 250px;
+    }
+    .editable-input-l:focus {
+        width: 270px;
+    }
+
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 280px;
+        margin-left:10%;
+        width: 80%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) and (max-width: 1281px) {
+
+    .callForActionImg{
+        width: 35%;
+        margin-left: 1%;
+        margin-top: 20%;
+    }
+
+    .callForActionTabs{
+        float:right;
+        width:130px;
+        margin-right:-10px;
+        margin-top:-130px;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 11%;
+        margin-left: 30%;
+    }
+    .myImg {
+        border-radius: 13px;
+        margin-left:5%;
+        width: 88%;
+        margin-top: 3px;
+    }
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 24px;
+    }
+
+    #cvDownloadImg{
+        position: absolute;
+        margin-top:300px;
+        margin-left:420px;
+        max-height:200px;
+        opacity: 0.8;
+        cursor:pointer;
+    }
+
+    #json {
+        font-size: 20px;
+    }
+
+    .editable-input-xs {
+        width: 70px;
+    }
+    .editable-input-xs:focus {
+        width: 100px;
+    }
+    .editable-input-s {
+        width: 170px;
+    }
+    .editable-input-s:focus {
+        width: 200px;
+    }
+    .editable-input-m {
+        width: 210px;
+    }
+    .editable-input-m:focus {
+        width: 230px;
+    }
+    .editable-input-l {
+        width: 260px;
+    }
+    .editable-input-l:focus {
+        width: 280px;
+    }
+
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 280px;
+        margin-left:10%;
+        width: 80%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+    }
+
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+
+
+    .callForActionImg{
+        width: 35%;
+        margin-left: 1%;
+        margin-top: 20%;
+    }
+
+    .callForActionTabs{
+        float:right;
+        width:130px;
+        margin-right:-10px;
+        margin-top:-130px;
+    }
+
+    .loaderImg {
+        border-radius:100%;
+        padding:3px;
+        position: absolute;
+        z-index: 1;
+        width: 11%;
+        margin-left: 30%;
+    }
+    .myImg {
+        border-radius: 13px;
+        margin-left:5%;
+        width: 88%;
+        margin-top: 3px;
+    }
+    .typeahead,
+    .tt-query,
+    .tt-suggestion,
+    .countriesList,
+    .tt-hint {
+        font-size: 24px;
+    }
+
+    #cvDownloadImg{
+        position: absolute;
+        margin-top:340px;
+        margin-left:620px;
+        max-height:200px;
+        opacity: 0.8;
+        cursor:pointer;
+
+    }
+
+    #json {
+        font-size: 22px;
+    }
+    .editable-input-xs {
+        width: 80px;
+    }
+    .editable-input-xs:focus {
+        width: 100px;
+    }
+    .editable-input-s {
+        width: 240px;
+    }
+    .editable-input-s:focus {
+        width: 280px;
+    }
+    .editable-input-m {
+        width: 280px;
+    }
+    .editable-input-m:focus {
+        width: 310px;
+    }
+    .editable-input-l {
+        width: 330px;
+    }
+    .editable-input-l:focus {
+        width: 350px;
+    }
+
+
+    #googleMap {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 280px;
+        margin-left:15%;
+        width: 70%;
+        padding:3px;
+        border:lightgray 3px solid;
+        border-radius: 10px;
+        height: 400px;
+    }
+
+    .socialNetworkLogo{
+        float: right;
+        margin-top: 20px;
+        margin-left: 10px;
+        opacity: 0.8;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .aboutMeIcon{
+        float: right;
+        margin-top:10px;
+        opacity: 0.8;
+        width: 50px;
+        height: 50px;
+    }
+    .companyLogo {
+        float: right;
+        margin-top: 20px;
+        opacity: 0.8;
+        border: 2px grey solid;
+        width: 110px;
+        height: 110px;
+        border-radius: 10px;
+    }
+
+
+}
+
+
+
 [ui-view].ng-enter {
     opacity: 0;
     -webkit-transition: all linear 0.5s;
@@ -61,26 +867,34 @@
 }
 
 .deleteButton {
-    height: 38px;
-    margin-top: 2px;
+    margin-left: -5px;
+    height: 32px;
     cursor: pointer;
+    margin-top:4px;
+    position:fixed;
 }
 
-.companyLogo {
-    width: 40%;
-    margin-left: 30%
+
+.modalHeaderRole{
+    font-weight: 500;
+    font-size:18px;
 }
 
-.callForActionTabs{
-    float:right;
-    width:160px;
-    margin-top:-150px;
+.modalHeaderCompany{
+    font-size:20px;
+    font-weight: 800;
+
 }
 
-.callForActionImg{
-    width: 35%;
-    margin-left: 1%;
-    margin-top: 20%;
+.modalHeaderInfo{
+    font-size:14px;
+    font-weight: 300;
+    line-height: 17px;
+    padding-bottom:25px;
+}
+
+.aboutModal{
+overflow: hidden;
 }
 
 .callForActionImg.ng-hide {
@@ -95,15 +909,6 @@
     transition: all linear 100ms;
 }
 
-.loaderImg {
-    border-radius:100%;
-    padding:3px;
-    position: absolute;
-    z-index: 1;
-    width: 11%;
-    margin-left: 30%;
-}
-
 .loaderImg.ng-hide {
     opacity: 0;
 }
@@ -114,118 +919,6 @@
 
 .loaderImg.ng-hide-add {
     transition: all linear 1000ms;
-}
-
-@media (max-width: 770px) {
-    .editable-input-xs {
-        width: 50px;
-        font-size: 12px;
-    }
-
-    .editable-input-xs:focus {
-        width: 60px;
-
-    }
-
-    .editable-input-s {
-        width: 60px;
-        font-size: 12px;
-
-    }
-
-    .editable-input-s:focus {
-        width: 75px;
-
-    }
-
-    .editable-input-m {
-        font-size: 12px;
-        width: 90px;
-    }
-
-    .editable-input-m:focus {
-        width: 115px;
-    }
-
-    .editable-input-l {
-        font-size: 12px;
-        width: 115px;
-    }
-
-    .editable-input-l:focus {
-        width: 140px;
-
-    }
-
-}
-
-@media (min-width: 770px) and (max-width: 1200px) {
-    .editable-input-xs {
-        width: 50px;
-    }
-
-    .editable-input-xs:focus {
-        width: 70px;
-    }
-
-    .editable-input-s {
-        width: 110px;
-    }
-
-    .editable-input-s:focus {
-        width: 140px;
-    }
-
-    .editable-input-m {
-        width: 130px;
-    }
-
-    .editable-input-m:focus {
-        width: 160px;
-    }
-
-    .editable-input-l {
-        width: 220px;
-    }
-
-    .editable-input-l:focus {
-        width: 300px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .editable-input-xs {
-        width: 80px;
-    }
-
-    .editable-input-xs:focus {
-        width: 110px;
-    }
-
-    .editable-input-s {
-        width: 170px;
-    }
-
-    .editable-input-s:focus {
-        width: 200px;
-    }
-
-    .editable-input-m {
-        width: 200px;
-    }
-
-    .editable-input-m:focus {
-        width: 230px;
-    }
-
-    .editable-input-l {
-        width: 260px;
-    }
-
-    .editable-input-l:focus {
-        width: 350px;
-    }
 }
 
 .newLine {
@@ -267,11 +960,7 @@
 .minusSmallTopMargin {
     margin-top: -20px;
 }
-.myImg{
-    border-radius: 10px;
-    border: lightgray 1px solid;
-    padding: 8px;
-}
+
 .navigatorText {
     overflow: hidden;
     color: #9d9d9d;
@@ -281,39 +970,7 @@
     cursor: default;
 
 }
-@media (max-width: 1000px) {
-    #cvDownloadImg{
-        position: absolute;
-        margin-top:270px;
-        margin-left:300px;
-        max-height:100px;
-        opacity: 0.8;
-        cursor:pointer;
-    }
-}
 
-@media (min-width: 1000px) and (max-width: 1400px) {
-    #cvDownloadImg{
-        position: absolute;
-        margin-top:300px;
-        margin-left:460px;
-        max-height:200px;
-        opacity: 0.8;
-        cursor:pointer;
-    }
-}
-@media (min-width: 1400px) {
-    #cvDownloadImg{
-        position: absolute;
-        margin-top:300px;
-        margin-left:600px;
-        max-height:200px;
-        opacity: 0.8;
-        cursor:pointer;
-
-    }
-
-}
 .alert-title{
     min-height:143px;
 }
@@ -322,17 +979,6 @@
     background: #2c2c2e;
     color: #ebdada;
 
-}
-#googleMap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin-top: 290px;
-    margin-left: 18%;
-    width: 64%;
-    height: 400px;
 }
 
 .pac-container {
@@ -362,10 +1008,6 @@
     background-color: #31998f;
     border-radius: 80px;
     cursor: pointer;
-}
-
-#json {
-    font-size: 20px;
 }
 
 #txt {
@@ -418,8 +1060,6 @@ pre {
 }
 
 .countriesList {
-    font-weight: bold;
-    font-size: 1.2em;
     cursor: pointer;
 }
 
@@ -546,7 +1186,7 @@ pre {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 42px;
+    height: 40px;
     cursor: pointer;
     top: 0;
     right: 0;
@@ -557,7 +1197,7 @@ pre {
     border: none;
     -webkit-border-radius: 21px;
     border-radius: 21px;
-    font: normal 20px/normal "Antic", Helvetica, sans-serif;
+    font-size:20px;
     color: #876464;
     text-decoration: normal;
     -o-text-overflow: ellipsis;
@@ -590,13 +1230,46 @@ pre {
     transition: all 601ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
 }
 
-.styledInput {
+.styledInputAutoComplete{
     width: 50%;
     display: inline-block;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     padding: 6px 20px;
+    border: none;
+    outline: 0;
+    -webkit-border-radius: 32px / 54px;
+    border-radius: 32px / 54px;
+    font: normal 18px/normal "Coda", Helvetica, sans-serif;
+    color: rgba(0, 142, 198, 1);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    background: rgba(252, 252, 252, 1);
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) inset;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.66);
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+.styledInputAutoComplete:hover {
+    background: rgba(232, 249, 255, 1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(90, 90, 90, 0.2) inset;
+    box-shadow: 0 2px 2px 0 rgba(90, 90, 90, 0.2) inset;
+}
+
+.styledInputAutoComplete:focus {
+    background: rgba(255, 253, 232, 1);
+}
+
+.styledInput {
+    width: 50%;
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
     border: none;
     outline: 0;
     -webkit-border-radius: 32px / 54px;
@@ -626,6 +1299,7 @@ pre {
     background: rgba(255, 253, 232, 1);
 }
 
+
 .styledButton {
     display: inline-block;
     outline: 0;
@@ -635,7 +1309,6 @@ pre {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     cursor: pointer;
-    padding: 0 10px;
     border: none;
     -webkit-border-radius: 20px;
     border-radius: 20px;
@@ -659,15 +1332,17 @@ pre {
     -webkit-box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.247059), 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 14px 20px 0 rgba(0, 0, 0, 0.14902);
     box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.247059), 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 14px 20px 0 rgba(0, 0, 0, 0.14902);
 }
-
+.new-client-btn{
+  margin-bottom:20px!important;
+}
 
 .typeahead,
 .tt-query,
 .tt-hint {
+
     width: 100%;
     height: 40px;
     padding: 8px 12px;
-    font-size: 24px;
     line-height: 30px;
     border: 2px solid #ccc;
     -webkit-border-radius: 8px;
@@ -677,6 +1352,7 @@ pre {
 }
 
 .typeahead-countries {
+
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -704,7 +1380,6 @@ pre {
 
 .typeahead-results.ng-hide {
     opacity: 0;
-
 }
 
 .typeahead-results.ng-hide-remove {
@@ -749,7 +1424,6 @@ pre {
 
 .tt-suggestion {
     padding: 3px 20px;
-    font-size: 18px;
     line-height: 24px;
 }
 

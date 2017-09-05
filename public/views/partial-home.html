@@ -6,10 +6,14 @@
             In this tab, a JSON object was formatted to html view, using pure JS.<br>
             Explore the site and see some more work of mine.
         </h4>
-        <img class="callForActionTabs" src="../images/seeMyWork.png"/>
+       <img class="callForActionTabs" src="../images/seeMyWork.png"/>
     </div>
-    <img ng-click="downloadCV()" id="cvDownloadImg" src="../images/download.png"/>
+
+    <!-- download from server does not work, will be fixed in next deployment.
+         meanwhile it will download from dropbox. -->
+    <a href="https://www.dropbox.com/s/tb2spimi4ths5g4/Tzach%20Bein%20-%20CV.docx?dl=1">
+        <img ng-click="downloadCV()"  id="cvDownloadImg" src="../images/downloadCV.png"/>
+    </a>
     <div id="txt">tzach_bein.json</div>
     <div id="json"></div>
-
 </div>

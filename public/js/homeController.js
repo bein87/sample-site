@@ -1,4 +1,4 @@
-app.controller('homeController', function($scope){
+app.controller('homeController', function($scope,$http){
 
     $scope.callForActionTabs = false
 
@@ -7,12 +7,11 @@ app.controller('homeController', function($scope){
         page: 'home'
     })
 
+    // download from server does not work, will be fixed in next deployment.
+    // meanwhile it will download from dropbox.
     $scope.downloadCV = function() {
-        window.open('../files/tzach bein - cv.docx')
-        ga('send', 'event', 'click', 'CV downloaded', 'Tzach Bein', '1');
-
+        ga('send', 'event', 'click', 'CV downloaded', 'Tzach Bein', '1')
     }
-
 
     //declaring json obejct to be shown on main page
     let jsonObject = {
@@ -20,25 +19,26 @@ app.controller('homeController', function($scope){
             "Name" : "Tzach Bein",
             "Address" : "Tel Aviv",
             "Education" : "BS.c Information Systems",
+            "GitHub" : "github.com/bein87",
             "Contact" : {
                 "Phone" : 546737297,
                 "Email" : "bein87@gmail.com"
-            }
+            },
         },
         "Site Technology" : {
-            "server side" : "Node.js",
-            "client side" : "angularJS",
-            "hosting" : "Amazon Web Services",
-            "framework" : "express",
-            "javascript" : "jQuery",
-            "style" : "bootstrap",
-            "developing tools" : "gulp with browser-sync and nodemon",
-            "testing" : "chai with mocha",
-            "api's" : {
-                "location" : "google maps and freegeoip",
-                "analyze" : "google analytics",
-                "weather" : "self-made webCrawler and apixu",
-                "typeahead" : "twitter"
+            "Server Side" : "Node.js",
+            "Client Side" : "angularJS",
+            "Hosting" : "Amazon Web Services",
+            "Framework" : "Express",
+            "Javascript" : "jQuery",
+            "Style" : "Bootstrap",
+            "Dev. Tools" : "Gulp + Browsersync + Nodemon",
+            "Testing" : "Chai with Mocha",
+            "API's" : {
+                "Location" : "Google Maps and FreeGeoIP",
+                "Analyze" : "Google Analytics",
+                "Weather" : "Self-made WebCrawler + Apixu",
+                "Typeahead" : "Twitter"
             }
         },
     }
@@ -54,7 +54,7 @@ app.controller('homeController', function($scope){
 
         //adding div elemnt with the needed indent
         let rtnFn = function() {
-            let indent = (textIndent * 30)
+            let indent = (textIndent * 20)
             return `<div style="text-indent: ${indent}px;"> ${p1} </div>`
         }
         let rtnStr = 0
@@ -76,8 +76,13 @@ app.controller('homeController', function($scope){
             rtnStr = rtnFn()
         }
 
-        //space up quotation marks
-        return (rtnStr.replace(/:/g," : ").replace(/"/g,` " `))
+        //adding space before and after :
+        rtnStr = rtnStr.replace(/:/g," : ")
+
+        //add the next row if you want to space up quotation marks to 'wider' view
+        //rtnStr = rtnStr.replace(/:/g," : ").replace(/"/g,` " `))
+
+        return rtnStr
     })
 
     //add classes to json, to style each type
